@@ -1,0 +1,127 @@
+@media (min-width: 320px) {
+  .container {
+    display: flex;
+    width: 320px;
+    height: 640;
+    
+    flex-direction: column;
+    height: 100vh; /* Забезпечує розміщення контейнера по всій висоті вікна */
+    align-items: center; /* Центрує вміст по горизонталі */
+    gap: 25px;
+  }
+
+  .text {
+    display: block;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+  
+    
+  }
+
+  button {
+    margin-left: auto; /* Вирівнює кнопки по правому краю контейнера */
+    margin-right: auto; 
+    width: 125px;
+    height: 30px;
+    border-radius: 10px;
+  
+    cursor: pointer;
+    transition: width 0.3s, height 0.3s;
+  }
+
+}
+
+html {
+  margin: 0 auto;
+  width: 393px;
+  height: 852px;
+}
+
+.text {
+  display: block;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  color: white;
+
+  
+}
+
+body {
+  background-color: pink;
+}
+
+.container {
+  display: flex;
+  padding-top: 120px;
+  
+  flex-direction: column;
+  height: 100vh; /* Забезпечує розміщення контейнера по всій висоті вікна */
+  align-items: center; /* Центрує вміст по горизонталі */
+  gap: 45px;
+}
+
+button {
+  margin-left: auto; /* Вирівнює кнопки по правому краю контейнера */
+  margin-right: auto; 
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: width 0.3s, height 0.3s;
+}
+
+.container2 {
+  display: flex;
+  gap: 180px;
+}
+
+button:hover {
+  
+  
+}
+
+.but {
+position: relative;
+  left: 0; /* Зміщення по горизонталі */
+  top: 0; /* Зміщення по вертикалі */
+  transition: transform 0s;
+
+  opacity: 1;
+
+}
+
+.but:hover {
+  
+  top: 80px; /* Зміщення кнопки вниз */
+  left: 80px; 
+
+
+}
+
+.yes {
+ transition: width 0.1s, height 0.1s;
+}
+
+.yes:hover {
+  width: 180px; /* Збільшуємо ширину кнопки */
+  height: 45px; /* Збільшуємо висоту кнопки */
+  background-color: papayawhip;
+}
+
+.yes:focus::after {
+  content: "Мы отлично проведем время!";
+  display: block;
+  text-align: center;
+
+  font-size: 13px;
+}
+
+.yes:focus {
+  font-size: 0px; /* Вимикаємо можливість взаємодії з кнопкою */
+}
